@@ -3,6 +3,7 @@
   "name": "remix-template",
   "license": "MIT",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "build": "npm run build:css && remix build",
     "build:css": "tailwindcss -m -i ./app/styles/app.css -o app/styles/generated.css",
     "dev": "concurrently \"npm run dev:css\" \"remix dev\"",
